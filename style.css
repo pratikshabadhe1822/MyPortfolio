@@ -1,0 +1,300 @@
+/* style.css */
+
+:root {
+    --primary-color: #6c63ff;
+    --accent-color: #00bfa6;
+    --highlight-color: #ff6b6b;
+    --bg-color: #f8f9fa;
+    --text-color: #333;
+    --card-bg: #ffffff;
+    --shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    --border-radius: 12px;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  
+  .navbar {
+    background: var(--card-bg);
+    box-shadow: var(--shadow);
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: var(--accent-color);
+  }
+  
+  .hero {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    color: white;
+    padding: 100px 10% 80px;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero span {
+    color: #ffd369;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    padding: 12px 25px;
+    background-color: var(--highlight-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #ff5252;
+  }
+  
+  .section {
+    padding: 60px 10%;
+    text-align: center;
+    background-color: var(--bg-color);
+  }
+  
+  .section h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+  
+  .section p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 1rem;
+  }
+  
+  .card {
+    background: var(--card-bg);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+  }
+  .map{
+    background: var(--card-bg);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+  }
+
+  .map1{
+    background: var(--card-bg);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+  }
+  
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .skill-card {
+    background-color: var(--accent-color);
+    color: rgb(220, 194, 194);
+    padding: 10px 20px;
+    border-radius: var(--border-radius);
+    font-weight: 500;
+    box-shadow: var(--shadow);
+  }
+  .skill-map{
+    background-color: var(--accent-color);
+    color: rgb(220, 194, 194);
+    padding: 10px 20px;
+    border-radius: var(--border-radius);
+    font-weight: 500;
+    box-shadow: var(--shadow);
+  }
+
+  .skill-map1{
+    background-color: var(--accent-color);
+    color: rgb(220, 194, 194);
+    padding: 10px 20px;
+    border-radius: var(--border-radius);
+    font-weight: 500;
+    box-shadow: var(--shadow);
+  }
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .project-card {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    text-align: left;
+  }
+  
+  .project-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+  }
+
+  .internship-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .internship-card{
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    text-align: left;
+  }
+
+  .internship-card h3{
+    color: var(--primary-color);
+    margin-bottom: 10px;
+  }
+  
+  .cert-list {
+    list-style: none;
+    margin-top: 20px;
+  }
+  
+  .cert-list li {
+    padding: 10px;
+    background: var(--card-bg);
+    margin-bottom: 10px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+  }
+  
+  form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  form input,
+  form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    resize: none;
+  }
+  
+  form button {
+    background-color: var(--accent-color);
+    color: white;
+    font-size: 1rem;
+    border: none;
+    padding: 12px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  form button:hover {
+    background-color: #009b88;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--card-bg);
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  .social-icons {
+    margin-top: 10px;
+  }
+  
+  .social-icons a {
+    margin: 0 10px;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: var(--accent-color);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .section h2 {
+      font-size: 1.6rem;
+    }
+  }
+  
